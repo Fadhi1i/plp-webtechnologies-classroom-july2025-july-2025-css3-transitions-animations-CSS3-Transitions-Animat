@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive CSS + JS Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Bringing Web Pages to Life ✨</h1>
+
+    <!-- Part 1: CSS-only animations -->
+    <button class="fancy-btn">Hover Me</button>
+    <div class="fade-box"></div>
+
+    <!-- Part 2 & 3: JS-triggered animations -->
+    <section>
+      <button id="animateBtn">Animate Box</button>
+      <div id="animBox"></div>
+    </section>
+
+    <section>
+      <button id="toggleModalBtn">Show Modal</button>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal">&times;</span>
+          <p>This modal slides and fades in/out 🎬</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

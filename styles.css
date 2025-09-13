@@ -1,0 +1,86 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background: #f4f4f4;
+}
+
+/* Part 1: Button Hover + Fade Animation */
+.fancy-btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    background: #6200ea;
+    color: white;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.fancy-btn:hover {
+    transform: scale(1.1);
+    background: #3700b3;
+}
+
+/* Fade box animation */
+.fade-box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background: coral;
+    animation: fadeInOut 3s infinite alternate;
+}
+
+@keyframes fadeInOut {
+    from {
+        opacity: 0.2;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Part 3: JavaScript-triggered animations */
+#animBox {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background: teal;
+    transition: transform 1s ease;
+}
+
+.animate {
+    transform: rotate(360deg) scale(1.2);
+}
+
+/* Modal styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    transform: translateY(-50px);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal.show .modal-content {
+    transform: translateY(0);
+    opacity: 1;
+}
